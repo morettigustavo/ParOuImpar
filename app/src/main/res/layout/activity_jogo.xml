@@ -1,0 +1,178 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/llPrincipal"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:textColor="#000000"
+        android:textSize="20sp"
+        android:background="#aa0000ff"
+        android:text="Escolha uma opção"/>
+
+    <RadioGroup
+        android:id="@+id/rgGrupoA"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center"
+        android:layout_marginTop="10sp">
+        <RadioButton
+            android:id="@+id/rbPar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="PAR"
+            android:onClick="limpar"
+            android:textSize="15sp"/>
+        <RadioButton
+            android:id="@+id/rbImpar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="IMPAR"
+            android:onClick="limpar"
+            android:textSize="15sp"/>
+    </RadioGroup>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:textColor="#000000"
+        android:textSize="20sp"
+        android:background="#aa0000ff"
+        android:text="Escolha a quantidade de dedos"/>
+
+    <RadioGroup
+        android:id="@+id/rgGrupoB"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center">
+        <RadioButton
+            android:layout_width="70sp"
+            android:layout_height="50sp"
+            android:onClick="um"
+            android:drawableBottom="@drawable/mao1"
+            />
+        <RadioButton
+            android:layout_width="70sp"
+            android:layout_height="50sp"
+            android:onClick="dois"
+            android:drawableBottom="@drawable/mao2"/>
+        <RadioButton
+            android:layout_width="70sp"
+            android:layout_height="50sp"
+            android:onClick="tres"
+            android:drawableBottom="@drawable/mao3"/>
+        <RadioButton
+            android:onClick="quatro"
+            android:layout_width="70sp"
+            android:layout_height="50sp"
+            android:drawableBottom="@drawable/mao4"/>
+        <RadioButton
+            android:layout_width="70dp"
+            android:layout_height="50sp"
+            android:onClick="cinco"
+            android:drawableBottom="@drawable/mao5"/>
+    </RadioGroup>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:textColor="#000000"
+        android:textSize="20sp"
+        android:background="#aa0000ff"
+        android:text="Resultado"/>
+    
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TextView
+            android:layout_width="200sp"
+            android:layout_height="wrap_content"
+            android:textSize="15sp"
+            android:gravity="center"
+            android:text="Você"/>
+        <TextView
+            android:layout_width="200sp"
+            android:textSize="15sp"
+            android:gravity="center"
+            android:layout_height="wrap_content"
+            android:text="Computador"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="200sp">
+        <ImageView
+            android:id="@+id/ivImagemEu"
+            android:layout_width="200sp"
+            android:layout_height="wrap_content"/>
+
+        <ImageView
+            android:id="@+id/ivImagemRobo"
+            android:layout_width="200sp"
+            android:layout_height="wrap_content"/>
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:textColor="#000000"
+        android:textSize="20sp"
+        android:background="#aa0000ff"
+        android:text="Placar"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TextView
+            android:layout_width="200sp"
+            android:layout_height="wrap_content"
+            android:textSize="15sp"
+            android:gravity="center"
+            android:text="Você"/>
+        <TextView
+            android:layout_width="200sp"
+            android:textSize="15sp"
+            android:gravity="center"
+            android:layout_height="wrap_content"
+            android:text="Computador"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TextView
+            android:id="@+id/tvPlacarEu"
+            android:layout_width="200sp"
+            android:layout_height="match_parent"
+            android:textColor="#000000"
+            android:background="#0055FF"
+            android:gravity="center"
+            android:text="123"/>
+        <TextView
+            android:id="@+id/tvPlacarRobo"
+            android:layout_width="200sp"
+            android:layout_height="match_parent"
+            android:textColor="#000000"
+            android:background="#ff00FF"
+            android:gravity="center"
+            android:text="123"/>
+    </LinearLayout>
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#BBBBBB"
+        android:textSize="20sp"
+        android:text="Reiniciar"
+        android:onClick="reiniciar"/>
+
+</LinearLayout>
